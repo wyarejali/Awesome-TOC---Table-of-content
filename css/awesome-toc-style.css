@@ -1,0 +1,102 @@
+.awesome_toc-wrapper {
+    --clr-link: #13e39e;
+    --clr-50: #ebf9f5;
+    --clr-100: #ccdddb;
+    --clr-200: #99bbb8;
+    --clr-300: #679a94;
+    --clr-400: #347871;
+    --clr-500: #01564d;
+    --clr-600: #01453e;
+    --clr-700: #01342e;
+    --clr-800: #00221f;
+    --clr-900: #00110f;
+}
+
+body #et-main-area .awesome_toc-wrapper {
+    background: var(--clr-50);
+    padding: 0 30px 0px 30px;
+    border: 1px solid var(--clr-100);
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+body #et-main-area .awesome_toc-title {
+    color: var(--clr-500);
+    font-size: 22px;
+    line-height: 1.4;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    padding: 15px 0;
+}
+
+body #et-main-area .awesome_toc-toggle {
+    position: relative;
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    border-radius: 50px;
+    background-image: url('data:image/svg+xml,\00003csvg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">\00003cpath fill="%23747878" d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z">\00003c/path>\00003c/svg>'),
+        linear-gradient(to bottom, var(--clr-100), var(--clr-100));
+    transform: rotate(180deg);
+    transition: transform 0.3s;
+    z-index: 1;
+}
+
+body #et-main-area .awesome_toc-toggle.collapsed {
+    transform: rotate(0deg);
+}
+
+body #et-main-area .awesome_toc-list {
+    list-style: none;
+    padding-left: 0 !important;
+    margin: 0;
+    margin-top: 6px;
+}
+
+body #et-main-area .awesome_toc-item {
+    margin-bottom: 10px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+body #et-main-area .awesome_toc-item a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #3776ff !important;
+    color: var(--clr-500);
+    font-weight: 600;
+}
+
+body #et-main-area .awesome_toc-item a::after {
+    content: unset !important;
+}
+
+body #et-main-area .awesome_toc-item a:hover {
+    text-decoration: underline;
+}
+
+body #et-main-area .awesome_toc-numbering {
+    margin-right: 10px;
+    color: var(--clr-500);
+    font-size: 12px;
+    font-weight: 500;
+    border: 1px solid var(--clr-100);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+}
+
+body #et-main-area .awesome_toc-level-3,
+body #et-main-area .awesome_toc-level-4,
+body #et-main-area .awesome_toc-level-5,
+body #et-main-area .awesome_toc-level-6 {
+    padding-left: 20px;
+}
